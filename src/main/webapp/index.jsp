@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Java开源博客系统后台登录页面-Powered by java1234</title>
+<title>login</title>
 </head>
 <body>
-${user.userName}
-${user.password}
-${user.age}
+${currentUser.user.userName}
+${currentUser.user.password}
+${currentUser.user.age}
 </body>
 </html>

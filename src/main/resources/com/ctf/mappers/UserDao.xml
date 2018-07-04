@@ -22,7 +22,9 @@
 	<select id="getUserList" parameterType="string"  resultMap="resultUserList">
 		select * from `t_user` where userName like #{userName}
 	</select>
-	
+	<select id="getByUserName" parameterType="string"  resultType="User">
+		select * from `t_user` where userName = #{userName}
+	</select>
 	 <!-- useGeneratedKeys设置为"true"表明要MyBatis获取由数据库自动生成的主键；keyProperty="id"指定把获取到的主键值注入到User的id属性 -->
 	<insert id="insertUser"  parameterType="User" useGeneratedKeys="true" keyProperty="id">
 		insert into `t_user`(userName,age,password) values (#{userName},#{age},#{password})
