@@ -13,7 +13,7 @@ import com.ctf.entity.User;
 
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("/login")
 public class AdminController {
 	/**
 	 * 用户登录
@@ -24,7 +24,7 @@ public class AdminController {
 	@RequestMapping("/index")
 	public ModelAndView index(){
 		ModelAndView mav=new ModelAndView();
-		mav.setViewName("admin/index");
+		mav.setViewName("login/index");
 		return mav;
 		
 	}
