@@ -19,7 +19,7 @@
 	
 	<mvc:annotation-driven/>
 	
-	<mvc:resources mapping="/login/**" location="/login/"/>
+	<mvc:resources mapping="/admin/**" location="/admin/"/>
 	
 	<!-- 视图解析器 -->
 	<!-- <bean id="viewResolver"
@@ -43,6 +43,7 @@
         <property name="viewClass">
             <value>org.springframework.web.servlet.view.freemarker.FreeMarkerView</value>
         </property>
+         <property name="requestContextAttribute" value="request" />
     </bean>
     <!-- ===================================================== -->
     <!-- ViewResolver For FreeMarkerConfigurer -->
