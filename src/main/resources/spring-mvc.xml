@@ -19,7 +19,7 @@
 	
 	<mvc:annotation-driven/>
 	
-	<mvc:resources mapping="/static/**" location="/static/"/>
+	<mvc:resources mapping="/admin/**" location="/admin/"/>
 
 	<!-- 视图解析器 -->
 	<!-- <bean id="viewResolver"
@@ -37,7 +37,7 @@
 	<!-- ViewResolver For FreeMarker -->
     <!-- ===================================================== -->
     <bean id="freemarkerResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="order" value="1" />
+        <property name="order" value="0" />
         <property name="suffix" value=".html" />
         <property name="contentType" value="text/html;charset=utf-8" />
         <property name="viewClass">
@@ -49,7 +49,7 @@
     <!-- ===================================================== -->
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath">
-            <value>/template/</value>
+            <value>/</value>
         </property>
         <property name="freemarkerSettings"><!-- 设置FreeMarker环境属性 -->
             <props>
