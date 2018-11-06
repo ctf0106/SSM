@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<!-- namespace命名空间中的值一定要对应包定义的接口"com.ctf.dao"，否则报错 -->
-<mapper namespace="com.ctf.dao.UserDao"> 
+<!-- namespace命名空间中的值一定要对应包定义的接口"com.tengfeigfei.dao"，否则报错 -->
+<mapper namespace="com.tengfei.dao.UserDao">
    
 	
 	<!-- 返回List而定义的resultMap，注意column是数据库中定义的列字段，而property是我们自定义的字段，能够解决属性和数据库字段不一致的问题 -->

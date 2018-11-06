@@ -1,4 +1,4 @@
-package com.ctf.entity;
+package com.tengfei.entity;
 
 public class User {
 	private Integer id;

@@ -1,8 +1,8 @@
-package com.ctf.service;
+package com.tengfei.service;
 
 import java.util.List;
 
-import com.ctf.entity.User;
+import com.tengfei.entity.User;
 
 public interface UserService {
 	public List<User> getUserList(String userName);

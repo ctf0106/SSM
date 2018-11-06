@@ -1,4 +1,4 @@
-package com.ctf.realm;
+package com.tengfei.realm;
 
 import javax.annotation.Resource;
 
@@ -11,8 +11,8 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
-import com.ctf.entity.User;
-import com.ctf.service.UserService;
+import com.tengfei.entity.User;
+import com.tengfei.service.UserService;
 
 public class MyRealm extends AuthorizingRealm{
 

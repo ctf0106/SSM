@@ -1,4 +1,4 @@
-package com.ctf.controller;
+package com.tengfei.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ctf.entity.User;
-import com.ctf.service.UserService;
+import com.tengfei.entity.User;
+import com.tengfei.service.UserService;
 
 @Controller  
 @RequestMapping("/user")  

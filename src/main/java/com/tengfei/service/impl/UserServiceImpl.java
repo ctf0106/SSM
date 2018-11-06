@@ -1,4 +1,4 @@
-package com.ctf.service.impl;
+package com.tengfei.service.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.ctf.dao.UserDao;
-import com.ctf.entity.User;
-import com.ctf.service.UserService;
+import com.tengfei.dao.UserDao;
+import com.tengfei.entity.User;
+import com.tengfei.service.UserService;
 
 @Service("userService")  
 public class UserServiceImpl implements UserService {

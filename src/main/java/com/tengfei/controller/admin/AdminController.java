@@ -1,4 +1,4 @@
-package com.ctf.controller.admin;
+package com.tengfei.controller.admin;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ctf.entity.User;
+import com.tengfei.entity.User;
 
 
 @Controller
@@ -17,9 +17,6 @@ import com.ctf.entity.User;
 public class AdminController {
 	/**
 	 * 用户登录
-	 * @param blogger
-	 * @param request
-	 * @return
 	 */
 	@RequestMapping("/index")
 	public ModelAndView index(){

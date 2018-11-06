@@ -1,8 +1,8 @@
-package com.ctf.dao;
+package com.tengfei.dao;
 
 import java.util.List;
 
-import com.ctf.entity.User;
+import com.tengfei.entity.User;
 
 public interface UserDao {
 	
