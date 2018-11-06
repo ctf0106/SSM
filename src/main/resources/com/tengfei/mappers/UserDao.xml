@@ -8,7 +8,7 @@
 	<!-- 返回List而定义的resultMap，注意column是数据库中定义的列字段，而property是我们自定义的字段，能够解决属性和数据库字段不一致的问题 -->
 	<resultMap type="User" id="resultUserList">
 		<id column="id" property="id"></id>
-		<result column="userName" property="userName"/>
+		<result column="user_name" property="userName"/>
 		<result column="age" property="age"/>
 		<result column="password" property="password"/>
 	</resultMap>
@@ -19,13 +19,13 @@
 	
 	<!-- 通过用户名返回用户列表 -->
 	<!-- 记住：在获取List列表的时候，resultMap="resultUserList"千万别写成resultType="resultUserList"，否则报错 -->
-	<select id="getUserList" parameterType="string"  resultMap="resultUserList">
+	<select id="getUserList"  resultMap="resultUserList">
 		select * from `t_user` where userName like #{userName}
 	</select>
-	<select id="getByUserName" parameterType="string"  resultType="User">
+	<select id="getByUserName" resultType="User">
 		select * from `t_user` where userName = #{userName}
 	</select>
-	<select id="findAllUser" parameterType="string"  resultMap="resultUserList">
+	<select id="findAllUser"  resultMap="resultUserList">
 		select * from t_user
 	</select>
 	 <!-- useGeneratedKeys设置为"true"表明要MyBatis获取由数据库自动生成的主键；keyProperty="id"指定把获取到的主键值注入到User的id属性 -->
